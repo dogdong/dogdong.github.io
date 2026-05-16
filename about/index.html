@@ -273,7 +273,59 @@ How to contact me　　Email: yxd5126@163.com">
 <h3 id="To-introduce-myself"><a href="#To-introduce-myself" class="headerlink" title="To introduce myself"></a><strong>To introduce myself</strong></h3><p>　　I just want to tell you 我很菜.<br><img src="/images/about-alone.webp" alt="独自流浪"></p>
 <hr>
 <h1 id="How-to-contact-me"><a href="#How-to-contact-me" class="headerlink" title="How to contact me"></a><strong>How to contact me</strong></h1><p><br><br>　　<strong>Email:</strong> yxd5126@163.com</p>
-<iframe title="网易云音乐播放器" frameborder="no" border="5" marginwidth="0" marginheight="0" width="330" height="86" src="https://music.163.com/outchain/player?type=2&id=28668855&auto=1&height=66"></iframe>
+<style>
+  .music-card {
+    width: 330px;
+    max-width: 100%;
+    margin-top: 12px;
+    border: 1px solid #e5e5e5;
+    background: #fff;
+  }
+
+  .music-card button {
+    width: 100%;
+    padding: 16px 18px;
+    color: #333;
+    background: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .music-card button:hover {
+    background: #fafafa;
+  }
+
+  .music-card iframe {
+    display: block;
+    width: 100%;
+  }
+</style>
+<div class="music-card" id="music-card">
+  <button type="button" id="music-play">播放音乐</button>
+</div>
+<script>
+  (function () {
+    var button = document.getElementById('music-play');
+    var card = document.getElementById('music-card');
+    if (!button || !card) return;
+
+    button.onclick = function () {
+      var iframe = document.createElement('iframe');
+      iframe.title = '网易云音乐播放器';
+      iframe.frameBorder = 'no';
+      iframe.setAttribute('border', '0');
+      iframe.setAttribute('marginwidth', '0');
+      iframe.setAttribute('marginheight', '0');
+      iframe.width = '330';
+      iframe.height = '86';
+      iframe.src = 'https://music.163.com/outchain/player?type=2&id=28668855&auto=1&height=66';
+      card.innerHTML = '';
+      card.appendChild(iframe);
+    };
+  }());
+</script>
 
 
 <!-- UY BEGIN -->
