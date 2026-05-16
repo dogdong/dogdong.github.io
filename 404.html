@@ -1,17 +1,107 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="zh-Hans">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="robots" content="all" />
-  <meta name="robots" content="index,follow"/>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,follow">
+  <title>公益404 | 燕 " ࿆ ࿆ ࿆ ࿆ ࿆Z🔆</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+      color: #333;
+      background: #f7f7f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .page {
+      box-sizing: border-box;
+      width: min(760px, calc(100% - 40px));
+      min-height: 100vh;
+      margin: 0 auto;
+      padding: 72px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .fallback {
+      width: 100%;
+      padding: 44px 36px;
+      background: #fff;
+      border-top: 3px solid #222;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, .08);
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .code {
+      margin: 0 0 14px;
+      color: #222;
+      font-size: 56px;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    .title {
+      margin: 0 0 16px;
+      color: #222;
+      font-size: 24px;
+      font-weight: 400;
+    }
+
+    .desc {
+      margin: 0 auto 28px;
+      max-width: 520px;
+      color: #666;
+      font-size: 15px;
+      line-height: 1.8;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+
+    .actions a {
+      display: inline-block;
+      min-width: 112px;
+      padding: 10px 16px;
+      color: #222;
+      border: 1px solid #ddd;
+      text-decoration: none;
+      font-size: 14px;
+      transition: border-color .2s, background .2s;
+    }
+
+    .actions a:hover {
+      border-color: #222;
+      background: #fafafa;
+    }
+  </style>
 </head>
 <body>
+  <main class="page">
+    <section class="fallback" id="fallback">
+      <p class="code">404</p>
+      <h1 class="title">页面没有找到</h1>
+      <p class="desc">
+        原公益404脚本可能暂时无法加载。你可以先回到首页，或者继续查看归档里的文章。
+      </p>
+      <div class="actions">
+        <a href="/">回到首页</a>
+        <a href="/archives/">查看归档</a>
+      </div>
+    </section>
+  </main>
 
-<script type="text/javascript" src="http://www.qq.com/404/search_children.js"
-        charset="utf-8" homePageUrl="http://dongzi.xyz"
-        homePageName="回到我的主页">
-</script>
-
+  <script src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js"
+          charset="utf-8"
+          homePageUrl="/"
+          homePageName="回到我的主页"></script>
 </body>
 </html>
