@@ -2481,6 +2481,16 @@ body {
 .links-of-author-item .fa-globe {
   font-size: 15px;
 }
+.links-of-author-item:only-child {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+.links-of-author-item:only-child a {
+  display: inline-block;
+  min-width: 88px;
+  padding: 4px 12px;
+}
 .links-of-blogroll {
   margin-top: 20px;
   padding: 3px 0 0;
